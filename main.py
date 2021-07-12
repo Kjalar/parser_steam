@@ -12,10 +12,8 @@ url_login = "https://store.steampowered.com/login/"
 
 
 def get_user_url():
-    # https://steamcommunity.com/profiles/76561198171070463/games/?tab=all
-    # https://steamcommunity.com/id/leptopt1los/games/?tab=all
     while True:
-        user_url = 'https://steamcommunity.com/id/sofiaj111i'  # input('Введите url страницы пользователя: ')
+        user_url = input('Введите url страницы пользователя: ')
         try:
             if user_url[-1] == '/':
                 user_url = user_url[:-1]
